@@ -5,7 +5,7 @@
 .container{
     display: grid;
     grid-template-columns: 5% 15% 15% 15% 15% 20% 5% 5% 5% ;
-    grid-template-rows: 80vh 2vw 35vw 2vw 2vw 2vw;
+    grid-template-rows: 100vh 2vw 35vw 20vw 2vw 2vw;
     grid-template-areas: "nav main main main main main realtors realtors realtors"
   "nav . services services services services services services ."
   "nav goals goals goals goals story story story story"
@@ -15,73 +15,122 @@
 }
 .navbar{
     grid-area: nav;
-    background-color:#c69963;
-    justify-content: center;
-    display: grid;
+    background-color: rgb(206, 153, 40);
+   
 }
 #nav_img{
-    width: 3vw;
-    justify-self: center;
+    width: 5vw;
+    
+    
 }
 .main{
     grid-area: main;
     background-image: url(./hero.jpeg);
-    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
-    display: grid;
-    background-position: center ;
-    background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    justify-content: center
+    background-position: center;
+    display: grid;
+  justify-content: center;
 
-
+}
+.main_logo{
+    height: 3vw;
+    justify-self: center;
+    padding-top: 2%;
+}
+.partners_img{
+    width: 12vw;
+    height: 5vw;
+}
+.main_content{
+    justify-self: start;
+    align-self: center;
 }
 .seen_on{
-    
+    justify-self: center;
+    align-self: center;
+    color: white;
 }
-#main_logo{
+.main_content p{
+    background-color: white;
+    width: fit-content;
+}
+.partners{
+display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10%;
+    grid-template-rows: auto;
+    align-content: center;
+}
+.main_content h1{
+color: white;
+}
+.main_content h2{
+    color: white
+}
+.realtors{
+    grid-area: realtors;
+    background-color:rgb(16, 29, 44);
+    padding:5% ;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+
+}
+.realtors_details img{
+height: 5vw;
+border-radius: 50%;
+}
+.realtors h3{
+font-size: 2vw;
+padding: 15% 0%
+    }
+.realtors_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr;
+    row-gap: 50%;
+    align-self: start;
+
+}
+#real_one{
+    grid-row: 1/2;
+    align-self: center;
+}
+#real_three{
+    grid-row: 3/4;
+    align-self: center;
+}
+#real_two{
+    grid-row: 2/3;
+    align-self: center;
+}
+.realtors p{
+font-size: 10px
+}
+.realtors h5{
+ font-size: 1.5vw
+ }
+.realtors p{
+  font-size: 1vw;
+ }
+ .services {
+     display: grid;
+     grid-template-columns: 
+ }
+
+.services img{
     width: 10vw;
-    justify-self: center;
-    margin-top: 5%;
-
 }
-#partners{
+.services{
+    grid-area: services
+}
+.serve{
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4, 10fr);
-    grid-gap: 9%;
-    padding: 4%;
-    padding-bottom: 9%;
-
-
+    grid-template-columns: 1fr 2fr;
 }
-.seen_on img{
-    width: 15vw;
-    justify-self: center;
-    align-self: end;
-}   
-h2{
-    color: white;
-    margin-left: 2%;
-}
-.main p {
-    color: white;
-  grid-column: 3/span 3;
-
-}
-.main h1{
-    color: white;
-    margin-left: 2%;
-} 
-#main_p{
-    display: grid;
-    color: white;
-    grid-column: 3/span 3;
-}
-#main_p_first{
-    margin-left: 2%;
-    background-color: #fff;
-    display: inline;
-    color: black;
-    padding: 0% 1%;
+.serve p{
+    grid-column:3/2
 }
